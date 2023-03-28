@@ -59,15 +59,13 @@ public class TwoSums {
         int size = nums.length;
         int[] result = new int[2];
         int i = 0;
-        while (i < size) {
             for (int j = i + 1; j < size; j++) {
                 if (nums[i] + nums[j] == target) {
-                    result[0] = i;
                     result[1] = j;
                     return Arrays.toString(result);
                 }
             }
-        }
+
         return Arrays.toString(result);
     }
 
